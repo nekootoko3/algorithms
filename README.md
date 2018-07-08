@@ -54,6 +54,13 @@ All scripts are written in python3
 
 ### linear_search
 
-- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_A
 - O(N)
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_A
 - python の 配列内にある値が存在するかを確認する`x in list`という構文は、内部的には線形探索を使っている
+
+### binary_search
+
+- O(logN)
+  - 一度探索するごとに範囲が半分になるので
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_B
+- 1はfor文を使って再帰的に関数実行、2が分かり易いwhile文、3はpythonのsetを利用
