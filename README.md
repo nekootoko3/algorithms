@@ -64,3 +64,9 @@ All scripts are written in python3
   - 一度探索するごとに範囲が半分になるので
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_B
 - 1はfor文を使って再帰的に関数実行、2が分かり易いwhile文、3はpythonのsetを利用
+
+### dictionary
+
+- O(1) (衝突がなければ)
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_C
+- 1はpythonの辞書を使わずに配列で実装。時間足りなかった。2はpythonの辞書を使っている、早い。
