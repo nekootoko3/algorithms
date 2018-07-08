@@ -49,3 +49,11 @@ All scripts are written in python3
   連結リストならもっと早くなるのかもしれない
 - queue_2.py はpython3の[collections](https://docs.python.jp/3/library/collections.html#collections.deque)を使った実装
 - queue_3.py はcollectionsを使わずにqueueを実装。queueの大きさは要素数+1
+
+## search
+
+### linear_search
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_A
+- O(N)
+- python の 配列内にある値が存在するかを確認する`x in list`という構文は、内部的には線形探索を使っている
