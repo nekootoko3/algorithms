@@ -82,3 +82,11 @@ All scripts are written in python3
 - 3は先に全ての組み合わせの各和をハッシュに入れて、各対象となる値がハッシュに存在しているかを確認する方式(時間内に終わる)
 - 4,5は組み合わせの作り方が異なる。各配列の値を使う場合、使わない場合それぞれを選択する再帰関数となっている
   - 4,5のやり方が綺麗。
+
+
+## Tree
+
+### rooted_trees
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_7_A
+- 1,2ともに左子右兄弟表現だが、1の場合メモリエラーになる。
