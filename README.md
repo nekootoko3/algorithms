@@ -70,3 +70,15 @@ All scripts are written in python3
 - O(1) (衝突がなければ)
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_C
 - 1はpythonの辞書を使わずに配列で実装。時間足りなかった。2はpythonの辞書を使っている、早い。
+
+## Recursion / Divede and Conquer
+
+### exhaustive_search
+
+- O(2のN乗)
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_A
+- 1、2は各対象となる値と組み合わせた値が等しいかを比較している(時間切れ)
+  - 対象となる値が少ない場合には問題ないが、増えた場合には同じ計算が何度も行われるので先に全通りの組み合わせの各和をハッシュで持つ3の方法がよい
+- 3は先に全ての組み合わせの各和をハッシュに入れて、各対象となる値がハッシュに存在しているかを確認する方式(時間内に終わる)
+- 4,5は組み合わせの作り方が異なる。各配列の値を使う場合、使わない場合それぞれを選択する再帰関数となっている
+  - 4,5のやり方が綺麗。
