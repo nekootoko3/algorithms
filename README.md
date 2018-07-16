@@ -3,7 +3,7 @@
 [algorithms and data structure for programming contest](https://www.amazon.co.jp/dp/B00U5MVXZO/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)  
 All scripts are written in python3
 
-## sort
+## section_3 - sort
 
 ### insertion_sort
 
@@ -35,7 +35,7 @@ All scripts are written in python3
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_2_D
 - 最大の計算量O(Nの1.5乗)
 
-## data_structure
+## section_4 - data_structure
 
 ### stack
 
@@ -50,7 +50,7 @@ All scripts are written in python3
 - queue_2.py はpython3の[collections](https://docs.python.jp/3/library/collections.html#collections.deque)を使った実装
 - queue_3.py はcollectionsを使わずにqueueを実装。queueの大きさは要素数+1
 
-## search
+## section_5 - search
 
 ### linear_search
 
@@ -71,7 +71,7 @@ All scripts are written in python3
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_C
 - 1はpythonの辞書を使わずに配列で実装。時間足りなかった。2はpythonの辞書を使っている、早い。
 
-## Recursion / Divede and Conquer
+## section_6 - Recursion / Divede and Conquer
 
 ### exhaustive_search
 
@@ -84,7 +84,7 @@ All scripts are written in python3
   - 4,5のやり方が綺麗。
 
 
-## Tree
+## section_8 - Tree
 
 ### rooted_trees
 
@@ -103,3 +103,9 @@ All scripts are written in python3
     - あるノードから根までたどる際に、途中ノード時点での深さを一時的な高さとして入れておく。別ノードから根までたどる時に、一時的な高さを比較し、数値の大きい方を入れる
 - 2は各ノードに必要最低限持っておき、出力時に必要な値をとって来る
   - 高さと深さは別々に計算。
+
+### tree_walk
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_7_C
+- 各ノードのidを配列に入れるのが、左の子を辿りリーフノードの行き着いてからなのか、右の子もリーフノードに行き着いてからなのか、あるいは順次なのかによって、巡回の種類が変わる。
+- 1, 2は、リーフノードなのかを再帰する前にチェックするか、再帰関数内でチェックするかの違いでほとんど同じ。
