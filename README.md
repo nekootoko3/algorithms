@@ -83,6 +83,14 @@ All scripts are written in python3
 - 4,5は組み合わせの作り方が異なる。各配列の値を使う場合、使わない場合それぞれを選択する再帰関数となっている
   - 4,5のやり方が綺麗。
 
+## section_7 - sort2
+
+### merge_sort
+
+- O(NlogN)
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_B
+- 1は疑似コードをそのままコードにしたものでタイムエラーになる
+- 2はマージするときに左右の配列を初期化していた処理を、元の配列のコピーを取るようにした速度改善したもの。
 
 ## section_8 - Tree
 
