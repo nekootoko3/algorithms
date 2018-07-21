@@ -98,6 +98,16 @@ All scripts are written in python3
 - O(N)
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_6_B
 
+### quick_sort
+
+- O(NlogN)
+- 1, 2, 3 は全てquick_sortのやり方は同じ。安定かそうでないかの判定方法だけが違う。
+
+### counting_sort (bucket sort)
+
+- O(n+k)
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_6_A
+
 ## section_8 - Tree
 
 ### rooted_trees

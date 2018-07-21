@@ -5,10 +5,8 @@ INFTY = 1000000001
 cnt = [0]
 
 def merge(left, mid, right):
-    n1 = mid - left
-    n2 = right - mid
-    L = A[left:left+n1]
-    R = A[mid:mid+n2]
+    L = A[left:mid]
+    R = A[mid:right]
     L.append(INFTY)
     R.append(INFTY)
     i = 0
