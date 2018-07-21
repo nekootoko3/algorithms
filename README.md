@@ -88,9 +88,15 @@ All scripts are written in python3
 ### merge_sort
 
 - O(NlogN)
+- 安定なソート
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_B
 - 1は疑似コードをそのままコードにしたものでタイムエラーになる
 - 2はマージするときに左右の配列を初期化していた処理を、元の配列のコピーを取るようにした速度改善したもの。
+
+### partition
+
+- O(N)
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_6_B
 
 ## section_8 - Tree
 
