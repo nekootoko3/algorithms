@@ -133,3 +133,11 @@ All scripts are written in python3
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_7_C
 - 各ノードのidを配列に入れるのが、左の子を辿りリーフノードの行き着いてからなのか、右の子もリーフノードに行き着いてからなのか、あるいは順次なのかによって、巡回の種類が変わる。
 - 1, 2は、リーフノードなのかを再帰する前にチェックするか、再帰関数内でチェックするかの違いでほとんど同じ。
+
+## section_9 - binary_search_tree
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_8_A
+- 二分探索木
+- 挿入操作は木の高さはhとするとO(h)、なので、入力に偏りがなければO(logn)となる。
+  - 入力が偏っている場合には、最悪O(n)となる。
+    - 例えば、与えられた数字が徐々に大きくなっていく場合など右方向だけに伸び、そのときO(n)。
