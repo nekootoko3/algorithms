@@ -136,8 +136,17 @@ All scripts are written in python3
 
 ## section_9 - binary_search_tree
 
+### binary_search_tree_1
+
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_8_A
-- 二分探索木
+- 二分探索木への挿入
 - 挿入操作は木の高さはhとするとO(h)、なので、入力に偏りがなければO(logn)となる。
   - 入力が偏っている場合には、最悪O(n)となる。
     - 例えば、与えられた数字が徐々に大きくなっていく場合など右方向だけに伸び、そのときO(n)。
+
+### binary_search_tree_2
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_8_B
+- 二分探索木の探索
+- 計算量は挿入と同じ。
+- 1は再帰、2はwhileを使っているがどちらもやっていることは大きくは変わらない。
