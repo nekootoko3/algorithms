@@ -150,3 +150,10 @@ All scripts are written in python3
 - 二分探索木の探索
 - 計算量は挿入と同じ。
 - 1は再帰、2はwhileを使っているがどちらもやっていることは大きくは変わらない。
+
+### binary_search_tree_3
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_8_C
+- 二分探索木の削除
+- hを木の高さとして、削除対象節点を探索する計算量がO(h)、対象節点の次節点を探索する計算量がO(h)なのでO(h)
+- 節点と節点が持つキーを分けて考えると理解しやすいかもしれない。
