@@ -160,5 +160,13 @@ All scripts are written in python3
 
 ## section_9 - heap
 
+### complete_binary_tree
+
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_9_A
 - ソートされていないヒープ
+
+### maximum_heap
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_9_B
+- 最大ヒープの生成
+- 二分ヒープのサイズをHとすると計算量はO(H)
