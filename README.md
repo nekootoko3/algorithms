@@ -170,3 +170,12 @@ All scripts are written in python3
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_9_B
 - 最大ヒープの生成
 - 二分ヒープのサイズをHとすると計算量はO(H)
+
+## section_10 - dynamic_programming
+
+### fibonacci_number
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_A
+- フィボナッチ数列
+- 1はメモ化再帰を利用。すなわち、小さい部分問題の解を記憶しておき大きい問題の解に利用する
+- 2は2つの変数を1にした状態で対象の数値分ループを回し、1つの数値は前回ループ分の両者の和、1つの変数には今回ループ分の両者の和を代入していく。
