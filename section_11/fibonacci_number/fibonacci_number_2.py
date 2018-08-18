@@ -1,9 +1,5 @@
-def fib(n):
-    if Memo[n] is None:
-        Memo[n] = fib(n-1) + fib(n-2)
-    return Memo[n]
-
-n = int(input())
-Memo = [None for _ in range(n+1)]
-Memo[0], Memo[1] = 1, 1
-print(fib(n))
+N = int(input())
+a, b = 1, 1
+for _ in range(N):
+    a, b = b, a + b
+print(a)
