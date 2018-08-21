@@ -158,7 +158,7 @@ All scripts are written in python3
 - hを木の高さとして、削除対象節点を探索する計算量がO(h)、対象節点の次節点を探索する計算量がO(h)なのでO(h)
 - 節点と節点が持つキーを分けて考えると理解しやすいかもしれない。
 
-## section_9 - heap
+## section_10 - heap
 
 ### complete_binary_tree
 
@@ -171,7 +171,14 @@ All scripts are written in python3
 - 最大ヒープの生成
 - 二分ヒープのサイズをHとすると計算量はO(H)
 
-## section_10 - dynamic_programming
+### priority_queue
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_9_C
+- 優先度付きキュー
+- 1~4はヒープモジュールなし。タイムアウト
+- 5はヒープモジュール利用。ただし、モジュールでは最小ヒープが構成されるため、各キーをマイナスにしている。
+
+## section_11 - dynamic_programming
 
 ### fibonacci_number
 
@@ -179,3 +186,16 @@ All scripts are written in python3
 - フィボナッチ数列
 - 1はメモ化再帰を利用。すなわち、小さい部分問題の解を記憶しておき大きい問題の解に利用する
 - 2は2つの変数を1にした状態で対象の数値分ループを回し、1つの数値は前回ループ分の両者の和、1つの変数には今回ループ分の両者の和を代入していく。
+
+## section_12 - graph
+
+### graph
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_A
+- 隣接行列表現
+  - 長所
+    - M[u][v]で辺(u,v)を参照できるので、頂点uと頂点vの関係を定数時間O(1)で確認できる
+    - 辺の追加や変更も同様にO(1)
+  - 短所
+    - 頂点の2乗に比例するメモリを消費する。辺の少ないグラフの場合はメモリが無駄になりやすい
+    - 1つの隣接行列では頂点uと頂点vの関係を1つしか記録できない
