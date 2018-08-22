@@ -11,7 +11,7 @@ All scripts are written in python3
   - minimum computational comlexity is O(N)
 - stable sort
 - insertion_sort.py が正しい挿入ソートのアルゴリズム(最小の計算量がO(N))
-    - insertion_sort_2.py は最初の配列の並び順によらず計算量が(O(N²))
+  - insertion_sort_2.py は最初の配列の並び順によらず計算量が(O(N²))
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_A
 
 ### bubble_sort
@@ -199,3 +199,10 @@ All scripts are written in python3
   - 短所
     - 頂点の2乗に比例するメモリを消費する。辺の少ないグラフの場合はメモリが無駄になりやすい
     - 1つの隣接行列では頂点uと頂点vの関係を1つしか記録できない
+
+### depth_first_search
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_B
+- 各頂点について全ての頂点に隣接しているか調べるので、|V|を頂点の数として、O(|V|²)となる
+- スタックで経路を持ち、各頂点について未探索、探索中、探索済みのステータスを配列で持つ
+
