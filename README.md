@@ -212,3 +212,10 @@ All scripts are written in python3
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_C
 - 深さ優先探索と同様にO(|V|²)
 - 深さ優先探索は、スタックで探索の探索順序を決めていたが、幅優先探索はキューで探索順序を決定する。
+
+### connected_components
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_D
+- 隣接行列表現ではなく、隣接リスト表現を用いることで、O(|V|+|E|) (頂点の数+辺の数)の計算量になる
+- 無向グラフなので、頂点u,v両方が行き来できるよう二次元配列での辺を表現する
+- 先にグルーピングして、出題に対して同一グループかを確認する
