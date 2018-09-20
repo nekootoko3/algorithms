@@ -205,4 +205,10 @@ All scripts are written in python3
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_B
 - 各頂点について全ての頂点に隣接しているか調べるので、|V|を頂点の数として、O(|V|²)となる
 - スタックで経路を持ち、各頂点について未探索、探索中、探索済みのステータスを配列で持つ
+- または再帰でも探索可能
 
+### breadth_first_search
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_C
+- 深さ優先探索と同様にO(|V|²)
+- 深さ優先探索は、スタックで探索の探索順序を決めていたが、幅優先探索はキューで探索順序を決定する。
