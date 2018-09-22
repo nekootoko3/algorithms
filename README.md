@@ -177,6 +177,7 @@ All scripts are written in python3
 - 優先度付きキュー
 - 1~4はヒープモジュールなし。タイムアウト
 - 5はヒープモジュール利用。ただし、モジュールでは最小ヒープが構成されるため、各キーをマイナスにしている。
+- 木の高さに比例する数だけ要素の交換を行うので、要素数がNの優先度付きキューへの挿入と削除はともにO(logN)
 
 ## section_11 - dynamic_programming
 
@@ -233,3 +234,9 @@ All scripts are written in python3
 - 最小全域木と同様の考え方で解答することができる
   - 最小全域木の場合は最小全域木からそれ以外の頂点への最小の重みを求める
   - 最短経路問題の場合は始点からそれ以外の頂点の最小の重みを求める
+
+### single_source_shortest_path_2
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_12_C
+- ダイクストラ法に優先度付きキューを用いて実装する
+- |V|の数だけキューから頂点が取り出され( O(|V|log|V|) )、|E|の数だけキューに挿入される( O(|E|log|V|) )ので、O((|V|+|E|)log|V|)

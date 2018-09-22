@@ -17,6 +17,7 @@ p[0] = 0
 while True:
     min_cost = INFTY
     u = None
+    # mstに存在せず、視点から最も近い頂点uを選択する
     for i in range(N):
         if mst[i] != True and d[i] < min_cost:
             min_cost = d[i]
@@ -27,10 +28,13 @@ while True:
 
     mst[u] = True
 
+    # 始点 -> 頂点u -> 頂点v への合計の重みが、これまでに記録したvへの最小の重みd[v]より小さい場合には更新する
     for v in range(N):
-        if M[u][v] == INFTY:
+        # u -> への経路がない or 既に最短経路が求められている頂点の場合
+        if M[u][v] == INFTY or mst[v] == True:
             continue
 
+        # 頂点vに到達するのが初めて or 頂点u経由で頂点vに到達した方が近い
         if d[v] == INFTY or ( d[v] > (d[u] + M[u][v]) ):
             d[v] = d[u] + M[u][v]
             p[v] = u
