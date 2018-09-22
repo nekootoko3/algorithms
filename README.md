@@ -219,3 +219,8 @@ All scripts are written in python3
 - 隣接行列表現ではなく、隣接リスト表現を用いることで、O(|V|+|E|) (頂点の数+辺の数)の計算量になる
 - 無向グラフなので、頂点u,v両方が行き来できるよう二次元配列での辺を表現する
 - 先にグルーピングして、出題に対して同一グループかを確認する
+
+### minimum_spanning_tree
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_12_A
+- 重みが最小である頂点を探すためにグラフの頂点の数だけ探索を行うので、O(|V|²)
