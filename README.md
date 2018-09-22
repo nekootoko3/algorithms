@@ -224,3 +224,12 @@ All scripts are written in python3
 
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_12_A
 - 重みが最小である頂点を探すためにグラフの頂点の数だけ探索を行うので、O(|V|²)
+
+### single_source_shortest_path_1
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_12_B
+- セールスマン巡回問題やダイクストラのアルゴリズムと呼ばれる問題
+- minimun_spanning_tree(MST, 最小全域木)と同様にO(|V|²)
+- 最小全域木と同様の考え方で解答することができる
+  - 最小全域木の場合は最小全域木からそれ以外の頂点への最小の重みを求める
+  - 最短経路問題の場合は始点からそれ以外の頂点の最小の重みを求める
