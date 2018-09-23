@@ -221,6 +221,8 @@ All scripts are written in python3
 - 無向グラフなので、頂点u,v両方が行き来できるよう二次元配列での辺を表現する
 - 先にグルーピングして、出題に対して同一グループかを確認する
 
+## section_13 - single_source_shortest_path
+
 ### minimum_spanning_tree
 
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_12_A
@@ -240,3 +242,12 @@ All scripts are written in python3
 - http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_12_C
 - ダイクストラ法に優先度付きキューを用いて実装する
 - |V|の数だけキューから頂点が取り出され( O(|V|log|V|) )、|E|の数だけキューに挿入される( O(|E|log|V|) )ので、O((|V|+|E|)log|V|)
+
+## section_17 - dynamic_programming
+
+### coin_changing_problem
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_A
+- answer1: 二次元配列T[N][M]に値MにC[M]までのコインを何枚使ったかを記録しておく
+- answer2: 一次元配列T[N]に値Nに何枚のコインを使ったかを記録しておく
+- 計算量は二重ループを回しているので、O(MN)
