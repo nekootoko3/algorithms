@@ -251,3 +251,10 @@ All scripts are written in python3
 - answer1: 二次元配列T[N][M]に値MにC[M]までのコインを何枚使ったかを記録しておく
 - answer2: 一次元配列T[N]に値Nに何枚のコインを使ったかを記録しておく
 - 計算量は二重ループを回しているので、O(MN)
+
+## section_18 - number_theory
+
+### prime_numbers
+
+- http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_C
+- 合成数xは p<=√x を満たす素因子pを持つという性質を利用。つまり、xがその平方根以下の数で割り切れなければ素数となる
